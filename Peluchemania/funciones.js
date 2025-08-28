@@ -12,4 +12,14 @@ function loadModalData(){
     document.getElementById('modalEmail').textContent = email;
     document.getElementById('modalSubject').textContent = subject;
     document.getElementById('modalMessage').textContent = message;
+    
+    if(!email || !subject || !message){
+        alert("Completa todos los campos");
+        return; 
+    }
+    if(!email.includes("@") || !email.includes(".")){
+        alert("Porfavor ingresa un correo válido ");
+        return; 
+    }
+      
 }
