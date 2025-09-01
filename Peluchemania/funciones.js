@@ -39,8 +39,8 @@ function loadModalData(){
         return;
     }
 
-    
-    // 4. Si las validaciones pasan, carga los datos en el modal y añade la clase 'is-valid'
+
+
     email.classList.add('is-valid');
     subject.classList.add('is-valid');
     message.classList.add('is-valid');
